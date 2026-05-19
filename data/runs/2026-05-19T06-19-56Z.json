@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "2026-05-19T06-19-56Z",
+  "started_at": "2026-05-19T06:19:56Z",
+  "finished_at": "2026-05-19T06:20:59Z",
+  "status": "build_failed",
+  "rate_formula": "compatibility_rate = passed / (passed + failed + errored); skipped and NA are excluded",
+  "workflow_run_url": "https://github.com/Russole/ozone-s3-compatibility/actions/runs/26080014185",
+  "orchestration": {
+    "build_exit_code": 1,
+    "cluster_exit_code": 1
+  },
+  "execution": {
+    "s3_tests_args": "s3tests/functional",
+    "s3_tests_include_all_cases": false,
+    "mint_mode": "core",
+    "mint_targets": [],
+    "ozone_datanodes": "1"
+  },
+  "sources": {
+    "ozone": {
+      "repo": "https://github.com/apache/ozone.git",
+      "ref": "master",
+      "commit": "05e45f3d796bc4f61663c8155aa15686f96b0e78",
+      "short_commit": "05e45f3d796b"
+    },
+    "s3_tests": {
+      "repo": "https://github.com/ceph/s3-tests.git",
+      "ref": "submodule",
+      "commit": "fb8b73092bb1dd8db829f1205a9e52e73bf9a232",
+      "short_commit": "fb8b73092bb1"
+    },
+    "mint": {
+      "repo": "https://github.com/minio/mint.git",
+      "ref": "submodule",
+      "commit": "12559d50625b722d11fd798ae8ac2fb204e66dd1",
+      "short_commit": "12559d50625b"
+    }
+  },
+  "suites": {
+    "s3_tests": {
+      "key": "s3_tests",
+      "label": "s3-tests",
+      "status": "not_run",
+      "exit_code": 0,
+      "summary": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0,
+        "eligible": 0,
+        "compatibility_rate": null
+      },
+      "feature_summaries": [],
+      "included_case_strategy": "non_passing_only",
+      "non_passing_cases": []
+    },
+    "mint": {
+      "key": "mint",
+      "label": "mint",
+      "status": "not_run",
+      "exit_code": 0,
+      "summary": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0,
+        "eligible": 0,
+        "compatibility_rate": null
+      },
+      "feature_summaries": [],
+      "included_case_strategy": "all",
+      "target_execution": {
+        "executed_target_count": null,
+        "successful_target_count": null,
+        "target_runs": []
+      },
+      "log_parse": {
+        "raw_nonempty_line_count": 0,
+        "parsed_case_count": 0,
+        "non_json_line_count": 0,
+        "non_json_line_samples": []
+      },
+      "cases": []
+    }
+  }
+}
