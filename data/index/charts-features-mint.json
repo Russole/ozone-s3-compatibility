@@ -71,6 +71,16 @@
         "failed": 1,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
+        "rate": 0.9167,
+        "eligible": 12,
+        "passed": 11,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "aws-sdk-ruby": [
@@ -137,6 +147,16 @@
       {
         "run_id": "2026-05-18T06-33-39Z",
         "started_at": "2026-05-18T06:33:39Z",
+        "rate": 0.9167,
+        "eligible": 12,
+        "passed": 11,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
         "rate": 0.9167,
         "eligible": 12,
         "passed": 11,
@@ -215,6 +235,16 @@
         "failed": 1,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
+        "rate": 0.9091,
+        "eligible": 11,
+        "passed": 10,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "minio-java": [
@@ -281,6 +311,16 @@
       {
         "run_id": "2026-05-18T06-33-39Z",
         "started_at": "2026-05-18T06:33:39Z",
+        "rate": 0.8,
+        "eligible": 5,
+        "passed": 4,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
         "rate": 0.8,
         "eligible": 5,
         "passed": 4,
@@ -359,6 +399,16 @@
         "failed": 1,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
+        "rate": 0.6667,
+        "eligible": 3,
+        "passed": 2,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "aws-sdk-go-v2": [
@@ -425,6 +475,16 @@
       {
         "run_id": "2026-05-18T06-33-39Z",
         "started_at": "2026-05-18T06:33:39Z",
+        "rate": 0.0,
+        "eligible": 1,
+        "passed": 0,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
         "rate": 0.0,
         "eligible": 1,
         "passed": 0,
@@ -503,6 +563,16 @@
         "failed": 1,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
+        "rate": 0.0,
+        "eligible": 1,
+        "passed": 0,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "minio-go: testFunctional": [
@@ -569,6 +639,16 @@
       {
         "run_id": "2026-05-18T06-33-39Z",
         "started_at": "2026-05-18T06:33:39Z",
+        "rate": 0.0,
+        "eligible": 1,
+        "passed": 0,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-05-20T06-19-03Z",
+        "started_at": "2026-05-20T06:19:03Z",
         "rate": 0.0,
         "eligible": 1,
         "passed": 0,
