@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "partitioned": true,
-  "generated_at": "2026-05-20T07:24:46Z",
+  "generated_at": "2026-05-21T07:26:13Z",
   "rate_formula": "compatibility_rate = passed / (passed + failed + errored); skipped and NA are excluded",
   "suite_order": [
     "s3_tests",
     "mint"
   ],
-  "run_count": 9,
+  "run_count": 10,
   "partitions": {
     "runs": [
       "index/runs-000.json"
