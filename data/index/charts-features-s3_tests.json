@@ -391,6 +391,16 @@
         "failed": 186,
         "errored": 0,
         "skipped": 9
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.3941,
+        "eligible": 307,
+        "passed": 121,
+        "failed": 186,
+        "errored": 0,
+        "skipped": 9
       }
     ],
     "encryption": [
@@ -777,6 +787,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.1019,
+        "eligible": 108,
+        "passed": 11,
+        "failed": 97,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.1019,
         "eligible": 108,
         "passed": 11,
@@ -1175,6 +1195,16 @@
         "failed": 15,
         "errored": 0,
         "skipped": 1
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.6939,
+        "eligible": 49,
+        "passed": 34,
+        "failed": 15,
+        "errored": 0,
+        "skipped": 1
       }
     ],
     "parametrize": [
@@ -1561,6 +1591,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 45,
+        "passed": 0,
+        "failed": 45,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 45,
         "passed": 0,
@@ -1959,6 +1999,16 @@
         "failed": 32,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0588,
+        "eligible": 34,
+        "passed": 2,
+        "failed": 32,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "copy": [
@@ -2345,6 +2395,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.4848,
+        "eligible": 33,
+        "passed": 16,
+        "failed": 17,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.4848,
         "eligible": 33,
         "passed": 16,
@@ -2743,6 +2803,16 @@
         "failed": 29,
         "errored": 0,
         "skipped": 2
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 29,
+        "passed": 0,
+        "failed": 29,
+        "errored": 0,
+        "skipped": 2
       }
     ],
     "webidentity_test": [
@@ -3129,6 +3199,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 27,
+        "passed": 0,
+        "failed": 27,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 27,
         "passed": 0,
@@ -3527,6 +3607,16 @@
         "failed": 25,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0741,
+        "eligible": 27,
+        "passed": 2,
+        "failed": 25,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "user_policy": [
@@ -3913,6 +4003,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0741,
+        "eligible": 27,
+        "passed": 2,
+        "failed": 25,
+        "errored": 0,
+        "skipped": 3
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0741,
         "eligible": 27,
         "passed": 2,
@@ -4311,6 +4411,16 @@
         "failed": 11,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.5926,
+        "eligible": 27,
+        "passed": 16,
+        "failed": 11,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "tagging": [
@@ -4697,6 +4807,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.44,
+        "eligible": 25,
+        "passed": 11,
+        "failed": 14,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.44,
         "eligible": 25,
         "passed": 11,
@@ -5095,6 +5215,16 @@
         "failed": 21,
         "errored": 0,
         "skipped": 2
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 21,
+        "passed": 0,
+        "failed": 21,
+        "errored": 0,
+        "skipped": 2
       }
     ],
     "sse_s3": [
@@ -5481,6 +5611,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 21,
+        "passed": 0,
+        "failed": 21,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 21,
         "passed": 0,
@@ -5879,6 +6019,16 @@
         "failed": 12,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 12,
+        "passed": 0,
+        "failed": 12,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "bucket_encryption": [
@@ -6265,6 +6415,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 12,
+        "passed": 0,
+        "failed": 12,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 12,
         "passed": 0,
@@ -6663,6 +6823,16 @@
         "failed": 12,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 12,
+        "passed": 0,
+        "failed": 12,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "checksum": [
@@ -7049,6 +7219,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 10,
+        "passed": 0,
+        "failed": 10,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 10,
         "passed": 0,
@@ -7447,6 +7627,16 @@
         "failed": 9,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 9,
+        "passed": 0,
+        "failed": 9,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "conditional_write": [
@@ -7833,6 +8023,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 7,
+        "passed": 0,
+        "failed": 7,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 7,
         "passed": 0,
@@ -8231,6 +8431,16 @@
         "failed": 7,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 7,
+        "passed": 0,
+        "failed": 7,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "bucket_logging": [
@@ -8617,6 +8827,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 6,
+        "passed": 0,
+        "failed": 6,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 6,
         "passed": 0,
@@ -9015,6 +9235,16 @@
         "failed": 6,
         "errored": 0,
         "skipped": 1
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 6,
+        "passed": 0,
+        "failed": 6,
+        "errored": 0,
+        "skipped": 1
       }
     ],
     "token_resource_tags_test": [
@@ -9401,6 +9631,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 5,
+        "passed": 0,
+        "failed": 5,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 5,
         "passed": 0,
@@ -9799,6 +10039,16 @@
         "failed": 4,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 4,
+        "passed": 0,
+        "failed": 4,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "token_claims_trust_policy_test": [
@@ -10185,6 +10435,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 3,
+        "passed": 0,
+        "failed": 3,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 3,
         "passed": 0,
@@ -10583,6 +10843,16 @@
         "failed": 3,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 3,
+        "passed": 0,
+        "failed": 3,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "token_tag_keys_test": [
@@ -10969,6 +11239,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 2,
+        "passed": 0,
+        "failed": 2,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 2,
         "passed": 0,
@@ -11367,6 +11647,16 @@
         "failed": 1,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 0.0,
+        "eligible": 1,
+        "passed": 0,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "token_role_tags_test": [
@@ -11753,6 +12043,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": 0.0,
+        "eligible": 1,
+        "passed": 0,
+        "failed": 1,
+        "errored": 0,
+        "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": 0.0,
         "eligible": 1,
         "passed": 0,
@@ -12151,6 +12451,16 @@
         "failed": 0,
         "errored": 0,
         "skipped": 0
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": 1.0,
+        "eligible": 1,
+        "passed": 1,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 0
       }
     ],
     "group": [
@@ -12537,6 +12847,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 4
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": null,
         "eligible": 0,
         "passed": 0,
@@ -12935,6 +13255,16 @@
         "failed": 0,
         "errored": 0,
         "skipped": 4
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 4
       }
     ],
     "iam": [
@@ -13321,6 +13651,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 2
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": null,
         "eligible": 0,
         "passed": 0,
@@ -13719,6 +14059,16 @@
         "failed": 0,
         "errored": 0,
         "skipped": 65
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 65
       }
     ],
     "iam_cross_account": [
@@ -14105,6 +14455,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 19
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": null,
         "eligible": 0,
         "passed": 0,
@@ -14503,6 +14863,16 @@
         "failed": 0,
         "errored": 0,
         "skipped": 13
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 13
       }
     ],
     "iam_user": [
@@ -14889,6 +15259,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 17
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": null,
         "eligible": 0,
         "passed": 0,
@@ -15287,6 +15667,16 @@
         "failed": 0,
         "errored": 0,
         "skipped": 2
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 2
       }
     ],
     "role_policy": [
@@ -15679,6 +16069,16 @@
         "failed": 0,
         "errored": 0,
         "skipped": 7
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 7
       }
     ],
     "sns": [
@@ -16065,6 +16465,16 @@
       {
         "run_id": "2026-06-20T06-40-11Z",
         "started_at": "2026-06-20T06:40:11Z",
+        "rate": null,
+        "eligible": 0,
+        "passed": 0,
+        "failed": 0,
+        "errored": 0,
+        "skipped": 4
+      },
+      {
+        "run_id": "2026-06-21T07-06-29Z",
+        "started_at": "2026-06-21T07:06:29Z",
         "rate": null,
         "eligible": 0,
         "passed": 0,
