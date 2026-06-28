@@ -1,6 +1,71 @@
 {
   "runs": [
     {
+      "id": "2026-05-19T06-19-56Z",
+      "status": "build_failed",
+      "started_at": "2026-05-19T06:19:56Z",
+      "finished_at": "2026-05-19T06:20:59Z",
+      "workflow_run_url": "https://github.com/Russole/ozone-s3-compatibility/actions/runs/26080014185",
+      "execution": {
+        "s3_tests_args": "s3tests/functional",
+        "s3_tests_include_all_cases": false,
+        "mint_mode": "core",
+        "mint_targets": [],
+        "ozone_datanodes": "1"
+      },
+      "file": "data/runs/2026-05-19T06-19-56Z.json",
+      "sources": {
+        "ozone": {
+          "repo": "https://github.com/apache/ozone.git",
+          "ref": "master",
+          "commit": "05e45f3d796bc4f61663c8155aa15686f96b0e78",
+          "short_commit": "05e45f3d796b"
+        },
+        "s3_tests": {
+          "repo": "https://github.com/ceph/s3-tests.git",
+          "ref": "submodule",
+          "commit": "fb8b73092bb1dd8db829f1205a9e52e73bf9a232",
+          "short_commit": "fb8b73092bb1"
+        },
+        "mint": {
+          "repo": "https://github.com/minio/mint.git",
+          "ref": "submodule",
+          "commit": "12559d50625b722d11fd798ae8ac2fb204e66dd1",
+          "short_commit": "12559d50625b"
+        }
+      },
+      "suites": {
+        "s3_tests": {
+          "label": "s3-tests",
+          "status": "not_run",
+          "summary": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0,
+            "eligible": 0,
+            "compatibility_rate": null
+          },
+          "feature_summaries": []
+        },
+        "mint": {
+          "label": "mint",
+          "status": "not_run",
+          "summary": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0,
+            "eligible": 0,
+            "compatibility_rate": null
+          },
+          "feature_summaries": []
+        }
+      }
+    },
+    {
       "id": "2026-05-18T06-33-39Z",
       "status": "completed",
       "started_at": "2026-05-18T06:33:39Z",
