@@ -306,6 +306,12 @@
         "started_at": "2026-07-01T06:43:34Z",
         "rate": 0.3024,
         "eligible": 711
+      },
+      {
+        "run_id": "2026-07-09T06-14-59Z",
+        "started_at": "2026-07-09T06:14:59Z",
+        "rate": null,
+        "eligible": 0
       }
     ],
     "mint": [
@@ -614,6 +620,12 @@
         "started_at": "2026-07-01T06:43:34Z",
         "rate": 0.8102,
         "eligible": 216
+      },
+      {
+        "run_id": "2026-07-09T06-14-59Z",
+        "started_at": "2026-07-09T06:14:59Z",
+        "rate": null,
+        "eligible": 0
       }
     ]
   }
