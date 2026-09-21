@@ -2,6 +2,10 @@ from __future__ import annotations
 
 import unittest
 import tomllib
+import os
+import subprocess
+import tempfile
+import textwrap
 from pathlib import Path
 
 
@@ -10,6 +14,32 @@ CUSTOM_DOMAIN = "ozone.s3.peterxcli.dev"
 
 
 class PagesCustomDomainTests(unittest.TestCase):
+    def test_ui_refresh_preserves_report_data_and_rejects_missing_catalog(self) -> None:
+        workflow = (ROOT / ".github/workflows/refresh-pages-ui.yml").read_text()
+        refresh = textwrap.dedent(workflow.split("      - name: Refresh published UI assets\n        run: |\n")[1].split("\n      - name:")[0])
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            runs = root / ".pages-repo/data/runs"
+            # Enough output to exceed a pipe buffer and expose find | grep -q under pipefail.
+            for index in range(2000):
+                run = runs / f"2026-09-21T00-00-00Z-{index:04d}"
+                run.mkdir(parents=True)
+                (run / "metadata.parquet").touch()
+            (root / "site/dist").mkdir(parents=True)
+            commands = root / "bin"
+            commands.mkdir()
+            uv = commands / "uv"
+            uv.write_text("#!/bin/bash -e\nmkdir -p out/pages-ui-refresh/data/catalog\nprintf catalog > out/pages-ui-refresh/data/catalog/runs.parquet\n")
+            uv.chmod(0o755)
+            env = dict(os.environ, PATH=f"{commands}:{os.environ['PATH']}")
+            subprocess.run(["bash", "-c", refresh], cwd=root, env=env, check=True)
+            catalog = root / ".pages-repo/data/catalog/runs.parquet"
+            self.assertEqual("catalog", catalog.read_text())
+            # With no recoverable runs, an asset-only refresh must stop before rsync.
+            result = subprocess.run(["bash", "-c", refresh], cwd=root, env=env)
+            self.assertNotEqual(0, result.returncode)
+            self.assertEqual("catalog", catalog.read_text())
+
     def test_vite_public_assets_include_pages_cname(self) -> None:
         cname_path = ROOT / "site" / "public" / "CNAME"
 
