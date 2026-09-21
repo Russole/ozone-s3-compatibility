@@ -1,5 +1,7 @@
 import * as duckdb from "@duckdb/duckdb-wasm";
 import type { AsyncDuckDBConnection } from "@duckdb/duckdb-wasm";
+import duckdbWasm from "@duckdb/duckdb-wasm/dist/duckdb-mvp.wasm?url";
+import duckdbWorker from "@duckdb/duckdb-wasm/dist/duckdb-browser-mvp.worker.js?url";
 
 import { PARQUET_FILE_REF } from "./parquetReport";
 import type { ParquetQueryClient } from "./parquetReport";
@@ -8,23 +10,6 @@ export type ParquetCacheMode = "auto" | "on_disk" | "in_mem" | "direct";
 
 interface DuckDbParquetQueryClientOptions {
   cacheMode?: ParquetCacheMode;
-}
-
-const DUCKDB_CDN_VERSION = duckdb.PACKAGE_VERSION;
-const DUCKDB_CDN_BASE_URL = `https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@${DUCKDB_CDN_VERSION}/dist/`;
-
-function pinnedJsDelivrBundles(): duckdb.DuckDBBundles {
-  const mvpBundle = duckdb.getJsDelivrBundles().mvp;
-  if (!mvpBundle) {
-    throw new Error("DuckDB-WASM MVP CDN bundle is unavailable.");
-  }
-  return {
-    mvp: {
-      ...mvpBundle,
-      mainModule: `${DUCKDB_CDN_BASE_URL}duckdb-mvp.wasm`,
-      mainWorker: `${DUCKDB_CDN_BASE_URL}duckdb-browser-mvp.worker.js`,
-    },
-  };
 }
 
 function absoluteUrl(path: string): string {
@@ -79,22 +64,15 @@ export class DuckDbParquetQueryClient implements ParquetQueryClient {
   private async database(): Promise<duckdb.AsyncDuckDB> {
     if (!this.dbPromise) {
       this.dbPromise = (async () => {
-        const bundle = await duckdb.selectBundle(pinnedJsDelivrBundles());
-        const workerUrl = URL.createObjectURL(
-          new Blob([`importScripts(${JSON.stringify(absoluteUrl(bundle.mainWorker!))});`], {
-            type: "text/javascript",
-          }),
-        );
-        const worker = new Worker(workerUrl);
+        const worker = new Worker(duckdbWorker);
         const db = new duckdb.AsyncDuckDB(new duckdb.VoidLogger(), worker);
-        await db.instantiate(absoluteUrl(bundle.mainModule), bundle.pthreadWorker ? absoluteUrl(bundle.pthreadWorker) : null);
+        await db.instantiate(duckdbWasm);
         await db.open({
           query: {
             castBigIntToDouble: true,
             castTimestampToDate: true,
           },
         });
-        URL.revokeObjectURL(workerUrl);
         return db;
       })();
     }

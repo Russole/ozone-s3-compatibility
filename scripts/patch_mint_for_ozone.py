@@ -61,15 +61,39 @@ sed -i.bak '/testStatObjectWithVersioning()/a\\
 """
 
 
+MC_DOWNLOAD = '''$WGET --output-document="${test_run_dir}/mc" "https://dl.minio.io/client/mc/release/linux-amd64/mc.${MC_VERSION}"
+chmod a+x "${test_run_dir}/mc"
+
+git clone --quiet https://github.com/minio/mc.git "$test_run_dir/mc.git"
+(
+	cd "$test_run_dir/mc.git"
+	git checkout --quiet "tags/${MC_VERSION}"
+)'''
+
+MC_BUILD = '''# MinIO retired its binary downloads; build the same tag as the functional tests.
+git clone --quiet --depth 1 --branch "$MC_VERSION" https://github.com/minio/mc.git "$test_run_dir/mc.git"
+(
+	cd "$test_run_dir/mc.git"
+	CGO_ENABLED=0 go build -trimpath -tags kqueue -ldflags "-s -w" -o "${test_run_dir}/mc" .
+)'''
+
+
 def patch_repo(repo: Path) -> None:
     target = repo / "build" / "minio-go" / "install.sh"
     if not target.exists():
         raise FileNotFoundError(f"missing target file: {target}")
 
-    if target.read_text() == CONTENT:
-        return
+    if target.read_text() != CONTENT:
+        target.write_text(CONTENT)
+        target.chmod(0o755)
 
-    target.write_text(CONTENT)
+    target = repo / "build" / "mc" / "install.sh"
+    source = target.read_text()
+    if MC_BUILD in source:
+        return
+    if MC_DOWNLOAD not in source:
+        raise ValueError(f"unrecognized mc installer: {target}")
+    target.write_text(source.replace(MC_DOWNLOAD, MC_BUILD))
     target.chmod(0o755)
 
 

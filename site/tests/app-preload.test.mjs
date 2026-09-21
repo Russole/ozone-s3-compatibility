@@ -102,12 +102,10 @@ test("routes run detail case permalinks without bootstrapping search", () => {
   assert.doesNotMatch(appSource, /shareState\.query \|\| shareState\.selectedCase\?\.testName/);
 });
 
-test("loads DuckDB-WASM runtime assets from the pinned CDN bundle", () => {
-  assert.match(duckdbClientSource, /getJsDelivrBundles/);
-  assert.match(duckdbClientSource, /DUCKDB_CDN_VERSION/);
-  assert.match(duckdbClientSource, /cdn\.jsdelivr\.net\/npm\/@duckdb\/duckdb-wasm@\$\{DUCKDB_CDN_VERSION\}\/dist\//);
-  assert.doesNotMatch(duckdbClientSource, /duckdb-mvp\.wasm\?url/);
-  assert.doesNotMatch(duckdbClientSource, /duckdb-browser-mvp\.worker\.js\?url/);
+test("bundles DuckDB-WASM runtime assets from the installed npm package", () => {
+  assert.match(duckdbClientSource, /@duckdb\/duckdb-wasm\/dist\/duckdb-mvp\.wasm\?url/);
+  assert.match(duckdbClientSource, /@duckdb\/duckdb-wasm\/dist\/duckdb-browser-mvp\.worker\.js\?url/);
+  assert.doesNotMatch(duckdbClientSource, /getJsDelivrBundles|cdn\.jsdelivr\.net/);
 });
 
 test("keeps explicit Parquet run detail on the Parquet path", () => {
